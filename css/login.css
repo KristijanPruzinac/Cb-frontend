@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*#region HELPER_CLASSES*/
+.center-text {
+    text-align: center;
+}
+.center-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*#endregion*/
+
+/*#region HEADER*/
+header {
+    display: block;
+    width: 100%;
+    height: 80px;
+
+    background-color: #355b50;
+}
+.header-logo {
+    display: inline-block;
+    float: left;
+
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+
+    animation: rotateAnimation 3s ease infinite;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(10deg); /* Rotate clockwise by 10 degrees */
+    }
+    50% {
+        transform: rotate(-10deg); /* Rotate counterclockwise by 10 degrees */
+    }
+    100% {
+        transform: rotate(10deg); /* Rotate counterclockwise by 10 degrees */
+    }
+}
+.header-text {
+    display: inline-block;
+    float: left;
+
+    height: 80px;
+
+    font-size: 40px;
+    line-height: 80px;
+    margin-left: 20px;
+
+    color: white;
+}
+/*#endregion*/
+
+/*#region MAIN*/
+main {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(height - 90px - 60px);
+
+    background-color: #7CA982;
+
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*#endregion*/
+
+/*#region FORM*/
+form {
+    display: block;
+    background-color: rgba(131, 131, 131, 0.403);
+
+    width: 500px;
+
+    border-radius: 20px;
+}
+form h1 {
+    color: #024e33;
+}
+form label {
+    color: #024e33;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: calc(100% - 40px);
+  height: 40px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+
+  border-radius: 0 0 20px 20px;
+}
+/*#endregion FORM*/
+
+/*#region FOOTER*/
+footer {
+    display: block;
+    width: 100%;
+    height: 45px;
+
+    background-color: #C2A83E;
+
+    color: white;
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 45px;
+}
+/*#endregion*/
