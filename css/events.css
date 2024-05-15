@@ -131,6 +131,12 @@ main {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  transition: transform 0.3s ease;
+}
+.event:hover {
+  transform: translateX(10px);
+  cursor:pointer;
 }
 .event-top {
   display: block;

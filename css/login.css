@@ -126,7 +126,8 @@ hr {
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.6;
+  transition: opacity ease 0.4s;
 }
 
 .registerbtn:hover {
