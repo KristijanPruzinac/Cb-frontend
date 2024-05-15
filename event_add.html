@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishingAttacks.hr</title>
+
+    <link rel="stylesheet" href="css/event_add.css">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="inline-fit">
+            <img class="header-logo" src="images/logo_inverted.png" alt="">
+            <p class="header-text">PhishingAttacks</p>
+        </div>
+        <div class="inline-float-right" style="width: 150px;"></div>
+    </header>
+    <main>
+        <form action="" class="center-div">
+            <div class="container">
+                <h1 class="center-text" style="margin-bottom: 20px;">Add new event</h1>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Name" name="name" id="name" required>
+            
+                <label for="url"><b>Malicious url</b></label>
+                <input type="text" placeholder="url" name="url" id="url" required>
+
+                <label for="brand"><b>Affected brand</b></label>
+                <input type="text" placeholder="brand" name="brand" id="brand" required>
+
+                <label for="description"><b>Description</b></label>
+                <input type="text" placeholder="description" name="description" id="description" required>
+
+                <label for="registrationDate"><b>Malicious domain registration date</b></label>
+                <input type="date" placeholder="registrationDate" name="registrationDate" id="registrationDate" required style="display: block; width: 100px; height: 25px; margin-bottom: 20px;">
+
+                <label for="status"><b>Status</b></label>
+                <select name="status" id="status" style="display: block; width: 100px; height: 25px; margin-bottom: 20px;">
+                    <option value="0">To do</option>
+                    <option value="1">In progress</option>
+                    <option value="2">Done</option>
+                </select>
+            
+                <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+
+                <button type="submit" class="registerbtn">Add new event</button>
+              </div>
+        </form>
+    </main>
+    <footer>
+        Copyright @ 2024. C♭ team | All rights reserved
+    </footer>
+</body>
+</html>
